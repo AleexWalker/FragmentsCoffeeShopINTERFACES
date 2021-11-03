@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">FragmentsCoffeeShop</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+
+    <string name="anticocaffe">Antico Caffe Greco</string>
+    <string name="cofeeroom">Cofee Room</string>
+    <string name="ibiza">Cofee Ibiza</string>
+    <string name="pudding">Pudding Coffe Shop</string>
+    <string name="express">L express</string>
+    <string name="corner">Coffee Corner</string>
+    <string name="sweet">Sweet Cup</string>
+
+    <string name="rome">St. Italy, Rome</string>
+    <string name="berlin">St. Germany, Berlin</string>
+    <string name="madrid">St. Colon, Madrid</string>
+    <string name="barcelona">St. Diagonal, Barcelona</string>
+    <string name="london">St. Picadilly Circus, London</string>
+    <string name="valencia">St. Angel Guimera, Valencia</string>
+    <string name="amsterdam">St. Kinkerstraat, Amsterdam</string>
+</resources>
