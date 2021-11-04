@@ -36,25 +36,23 @@ class FirstFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-                val recView: RecyclerView = view.findViewById<RecyclerView>(R.id.rec1)
-                val itemsFotos = ArrayList<TarjetaCard>()
-                itemsFotos.add(TarjetaCard(R.drawable.images , R.string.anticocaffe , R.string.rome))
-                itemsFotos.add(TarjetaCard(R.drawable.images1 , R.string.cofeeroom , R.string.berlin))
-                itemsFotos.add(TarjetaCard(R.drawable.images2 , R.string.ibiza, R.string.madrid))
-                itemsFotos.add(TarjetaCard(R.drawable.images3 , R.string.pudding , R.string.barcelona))
-                itemsFotos.add(TarjetaCard(R.drawable.images4 , R.string.express , R.string.london))
-                itemsFotos.add(TarjetaCard(R.drawable.images5 , R.string.corner , R.string.valencia))
-                itemsFotos.add(TarjetaCard(R.drawable.images6 , R.string.sweet, R.string.amsterdam))
+        val recView: RecyclerView = view.findViewById<RecyclerView>(R.id.rec1)
+        val itemsFotos = ArrayList<TarjetaCard>()
+        itemsFotos.add(TarjetaCard(R.drawable.images , R.string.anticocaffe , R.string.rome))
+        itemsFotos.add(TarjetaCard(R.drawable.images1 , R.string.cofeeroom , R.string.berlin))
+        itemsFotos.add(TarjetaCard(R.drawable.images2 , R.string.ibiza, R.string.madrid))
+        itemsFotos.add(TarjetaCard(R.drawable.images3 , R.string.pudding , R.string.barcelona))
+        itemsFotos.add(TarjetaCard(R.drawable.images4 , R.string.express , R.string.london))
+        itemsFotos.add(TarjetaCard(R.drawable.images5 , R.string.corner , R.string.valencia))
+        itemsFotos.add(TarjetaCard(R.drawable.images6 , R.string.sweet, R.string.amsterdam))
 
-                val adaptador = CardAdapter(itemsFotos)
+        val adaptador = CardAdapter(itemsFotos)
 
-                recView.adapter = adaptador
-                recView.layoutManager = LinearLayoutManager(context, LinearLayoutManager.VERTICAL, false)
+        recView.adapter = adaptador
+        recView.layoutManager = LinearLayoutManager(context, LinearLayoutManager.VERTICAL, false)
 
-                adaptador.onClick = {
-                    findNavController().navigate(R.id.action_FirstFragment_to_SecondFragment)
-
-
+        adaptador.onClick = {
+            findNavController().navigate(R.id.action_FirstFragment_to_SecondFragment)
         }
     }
 
